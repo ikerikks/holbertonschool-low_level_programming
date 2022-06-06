@@ -8,7 +8,7 @@
 int main(void)
 {
 
-int n = srand;
+int n = RAND_MAX;
 
 	if (n > 0)
 	{
