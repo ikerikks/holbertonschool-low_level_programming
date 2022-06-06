@@ -7,6 +7,8 @@
 
 int main(void)
 {
+	
+int n = srand
 
 	if (n > 0)
 	{
