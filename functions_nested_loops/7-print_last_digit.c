@@ -16,7 +16,7 @@ int print_last_digit(int a)
 		a = a * (-1);
 	}
 
-	if (a == INT_MAX)
+	if (a == INT_MIN)
 	{
 		a = a % 10;
 
