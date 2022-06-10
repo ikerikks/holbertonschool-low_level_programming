@@ -20,28 +20,37 @@ void times_table(void)
 
 			if (j != 0)
 			{
-				printf(",");
+				_putchar(',');
 
 				if ((i * j) > 9)
 				{
-					printf(" ");
+					_putchar(' ');
 				}
 
 				else
 				{
-					printf("  ");
+					_putchar(' ');
+					_putchar(' ');
 
 				}
 
 
 			}
 
-			printf("%d", (i * j));
+			if ((i * j) > 9)
+			{
+				_putchar((i * j) / 10 + '0');
+				_putchar((i * j) % 10 + '0');
+			}
+
+			else
+			{
+				_putchar((i * j) % 10 + '0');
+			}
+
 
 		}
 
-		printf("\n");
-
+		_putchar('\n');
 	}
-
 }
