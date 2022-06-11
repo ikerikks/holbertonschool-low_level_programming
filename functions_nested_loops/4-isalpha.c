@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
  * _isalpha - checks alpha characters
@@ -9,7 +8,7 @@
 
 int _isalpha(int c)
 {
-	if ((isalpha(c)) != 0)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}
@@ -17,7 +16,6 @@ int _isalpha(int c)
 	else
 	{
 		return (0);
-
 	}
 
 }
