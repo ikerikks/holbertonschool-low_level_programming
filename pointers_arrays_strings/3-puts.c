@@ -3,14 +3,14 @@
 /**
  * _puts - prints a string
  *
- * str: pointer parameter pointing to str of type char
+ * @str: pointer parameter pointing to a variable of type char
  *
  * Return: any value
  */
 
 void _puts(char *str)
 {
-	int i; 
+	int i;
 
 	for (i = 0; str[i] != 0; i++)
 	{
@@ -19,6 +19,6 @@ void _puts(char *str)
 	}
 
 	_putchar('\n');
-	
+
 
 }
