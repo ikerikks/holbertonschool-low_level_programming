@@ -7,7 +7,7 @@
  *
  * @src: source pointer parameter
  *
- * Return: any value
+ * Return: the pinter to dest
  */
 
 
