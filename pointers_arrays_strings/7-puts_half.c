@@ -16,22 +16,19 @@ void puts_half(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 	;
 
+	i-= 1;
+
+
 	if (i / 2 != 0)
 	{
-		for (j = (i / 2) + 1; j < i; j++)
-		{
-			_putchar(str[j]);
-		}
+		i = i + 1;
 	}
 
-	else
+	for (j = i / 2; j < i; j++)
 	{
-		for (j = 0; j < i / 2; j++)
-		{
-			_putchar(str[j]);
-		}
-
+		_putchar(str[j]);
 	}
+	
 
 	_putchar('\n');
 
