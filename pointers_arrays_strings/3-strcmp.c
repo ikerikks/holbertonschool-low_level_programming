@@ -15,8 +15,8 @@ int _strcmp(char *s1, char *s2)
 	int i;
 	int j;
 	
-	i = s1[0];
-	j = s2[0];
+	i = *s1;
+	j = *s2;
 
 	while (i && j && i == j)
 	{
