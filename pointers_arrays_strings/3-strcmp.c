@@ -28,7 +28,20 @@ int _strcmp(char *s1, char *s2)
 	}
 
 
-	return (i - j);
+	if (i < j)
+	{
+		return (i - j);
+	}
+
+	else if (i > j)
+	{
+		return (i - j);
+	}
+
+	else
+	{
+		return (0); 
+	}
 
 
 }
