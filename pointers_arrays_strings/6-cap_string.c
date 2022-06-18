@@ -14,6 +14,11 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		if (str[0] >= 97 && str[0] <= 122)
+		{
+			str[0] -= 32;
+		}
+
 		if (
 			str[i] == ' '
 			|| str[i] == '\t'
@@ -30,7 +35,7 @@ char *cap_string(char *str)
 			|| str[i] == '}'
 		)
 		{
-			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			if (str[i + 1] >= 99 && str[i + 1] <= 122)
 			{
 				str[i + 1] -= 32;
 			}
