@@ -5,7 +5,7 @@
  *
  * @str: string
  *
- * Return: string in uppercase
+ * Return: string
  */
 
 char *cap_string(char *str)
