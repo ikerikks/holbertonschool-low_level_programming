@@ -30,7 +30,7 @@ char *cap_string(char *str)
 			|| str[i] == '}'
 		)
 		{
-			if (str[i + 1] >= 99 && str[i + 1] <= 122)
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
 			{
 				str[i + 1] -= 32;
 			}
