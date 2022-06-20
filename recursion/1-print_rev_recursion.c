@@ -5,7 +5,7 @@
  *
  * @s: string
  *
- * Return; any value
+ * Return: any value
  */
 
 void _print_rev_recursion(char *s)
