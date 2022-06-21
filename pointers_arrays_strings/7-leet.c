@@ -10,31 +10,22 @@
 
 char *leet(char *str)
 {
+	char lower[] = {'a', 'e', 'o', 't', 'l'};
+	char upper[] = {'A', 'E', 'O', 'T', 'L'};
+	char encode[] = {'4', '3', '0', '7', '1'};
 	int i;
+	int j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
+		for (j = 0; j < 5; j++)
 		{
-			str[i] = '4';
-		}
-
-		else if (str[i] == 'e' || str[i] == 'E')
-		{
-			str[i] = '3';
-		}
-
-		else if (str[i] == 'o' || str[i] == '0')
-		{
-			str[i] = '0';
-		}
-
-		else if (str[i] == 'l' || str[i] == 'L')
-		{
-			str[i] = '1';
+			if (str[i] == lower[j] || str[i] == upper[j])
+				str[i] = encode[j];
 		}
 
 	}
+
 
 	return (str);
 
