@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ar -cr liball.a *.o
+ar -rc liball.a *.o
