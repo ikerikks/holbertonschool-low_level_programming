@@ -19,11 +19,11 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	int j;
 
+
 	if (s1 != NULL)
 	{
-		for (i = 0; s1[i] != '\0'; i++)
+		for (size1 = 0; s1[size1] != '\0'; size1++)
 			;
-		size1 = i;
 	}
 
 	else 
@@ -32,21 +32,20 @@ char *str_concat(char *s1, char *s2)
 	
 	if (s2 != NULL)
 	{
-		for (j = 0; s2[j] != '\0'; j++)
+		for (size2 = 0; s2[size2] != '\0'; size2++)
 			;
-		size2 = j;
 	}
 
 	else
 		size2 = 0;
 
-	s3 = malloc((i + j + 1) * sizeof(char));
+	s3 = malloc((size1 + size2 + 1) * sizeof(char));
 
 	if (s3 == NULL)
 		return (NULL);
 
 	for (i = 0; i < size1; i++)
-		s3[i] = s1[i];
+		s3[i] = s1[i]; 
 
 	for (j = size1; j < size1 + size2; j++)
 		s3[j] = s2[j - size1];
