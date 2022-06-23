@@ -15,15 +15,21 @@ char *_strdup(char *str)
 	int i;
 	int size;
 
+	if (str == NULL)
+		return (NULL);
+
 	for (i = 0; str[i] != '\0'; i++)
 	;
 
 	size = i;
 
-	s = malloc(size + 1 * sizeof(char));
-
-	if (str == NULL)
+	s = malloc(size * sizeof(char));
+	if (s == NULL)
+	{
+		free(s);
+		
 		return (NULL);
+	}
 
 	for (i = 0; i <= size; i++)
 		s[i] = str[i];
