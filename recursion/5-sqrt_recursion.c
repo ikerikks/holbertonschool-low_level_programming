@@ -1,6 +1,29 @@
 #include "main.h"
 
 /**
+ * sqrt2 - finds the square root of a number
+ *
+ * @n: integer
+ *
+ * @i: integer
+ *
+ * Return: integer value
+ */
+
+int sqrt2(int i, int n)
+{
+
+	if (i * i == n)
+		return (i);
+
+	if (i * i > n)
+		return (-1);
+
+	return (sqrt2(i + 1, n));
+
+}
+
+/**
  * _sqrt_recursion - returns the natural square root of a number
  *
  * @n: integer
@@ -10,12 +33,6 @@
 
 int _sqrt_recursion(int n)
 {
-
-	if (n == 0)
-		return (0);
-
-	else
-		return (_sqrt_recursion(n - 1));
-
-
+	return (sqrt2(0, n));
 }
+
