@@ -21,10 +21,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	if (ptr == NULL)
+	{
+		free(ptr);
 		return (NULL);
+	}
 
-	free(ptr);
-
+	
 	return (ptr);
 
 }
