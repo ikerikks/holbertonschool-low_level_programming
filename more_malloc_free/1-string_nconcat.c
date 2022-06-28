@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked - allocates memory
+ * string_nconcat - concatenates
  *
  * @s1: first string
  *
@@ -47,8 +47,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < size1; i++)
 		s3[i] = s1[i];
 
-	for (j = size1; j < n && s2[size1] != '\0'; j++)
-		s3[j] = s2[j - size1];
+	for (j = size1 ; j < (size1 + n); j++)
+		s3[j] = s2[j - i];
 
 	return (s3);
 
