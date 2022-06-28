@@ -1,3 +1,6 @@
-#ifndef SIZE
-#define SIZE 1204
-#endif
+#ifndef _OBJECT_
+#define _OBJECT_
+
+#define SIZE 1024
+
+#endif 
