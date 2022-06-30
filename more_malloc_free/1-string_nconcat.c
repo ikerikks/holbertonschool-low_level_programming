@@ -22,36 +22,36 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int j;
 
 	if (s1 == NULL)
-		s2 = "";
-
-	else
-		for (size1 = 0; s1[size1] != '\0'; size1++)
-			;
-
-
-	if (s2 == NULL)
 		s1 = "";
 
-	else
-		for (size2 = 0; s2[size2] != '\0'; size2++)
-			;
+	for (size1 = 0; s1[size1] != '\0'; size1++)
+		;
 
-	if (n >= size2)
+	if (s2 == NULL)
+		s2 = "";
+
+	for (size2 = 0; s2[size2] != '\0'; size2++)
+		;
+
+	if (n > size2)
 		n = size2;
 
-	s3 = malloc((size1 + n + 6) * sizeof(char));
+	s3 = malloc(size1 + n + 6);
 
 	if (s3 == NULL)
 	{
-		return (NULL);
 		free(s3);
+		return (NULL);
 	}
 
 	for (i = 0; i < size1; i++)
 		s3[i] = s1[i];
 
-	for (j = size1 ; j < (size1 + n); j++)
-		s3[j] = s2[j - i];
+	for (j = size1; j < (size1 + n); j++)
+		s3[j] = s2[j - size1];
+
+	s3[size1 + n] = '\0';
+
 
 	return (s3);
 
