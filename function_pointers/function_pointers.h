@@ -1,6 +1,6 @@
-#include <stddef.h>
 #ifndef __POINTERS__
 #define __POINTERS__
+#include <stddef.h>
 
 /* Function pointers */
 
