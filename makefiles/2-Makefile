@@ -3,6 +3,6 @@ SRC = *.c
 OBJ = .o
 NAME = school
 
-all: ${OBJ}
+all:
 
 	${CC} ${OBJ} -o ${NAME}
