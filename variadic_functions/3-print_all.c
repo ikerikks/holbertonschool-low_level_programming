@@ -3,14 +3,13 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - prints strings
- * @separator: character
- * @n: number of strings
+ * print_strings - prints anything
+ * @format: list of type of arguments
  *
  * Return: any value
  */
 
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_all(const char * const format, ...)
 {
 	va_list ap;
 	unsigned int i;
@@ -19,12 +18,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		if (va_arg(ap, char *) == NULL)
-			printf("(nil)");
+		printf("%s", va_arg(ap, char *));
 
-		else
-			printf("%s", va_arg(ap, char *));
-		
 		if (separator != NULL && i != n - 1)
 		{
 			printf("%s", separator);
