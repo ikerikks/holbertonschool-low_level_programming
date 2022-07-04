@@ -12,7 +12,10 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	unsigned int i;
+	int i;
+	char c = va_arg(ap, char);
+	float f = va_arg(ap, float);
+	char *s = va_arg(ap, char *);
 
 	va_start(ap, n);
 
