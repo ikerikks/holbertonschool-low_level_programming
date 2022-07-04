@@ -1,6 +1,6 @@
 CC = gcc
 SRC = *.c
-OBJ = $(SRCS:%.c=%.o)
+OBJ = .o
 NAME = school
 
 all: ${OBJ}
