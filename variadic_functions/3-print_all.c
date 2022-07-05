@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - prints anything
+ * print_all - prints anything
  * @format: list of type of arguments
  *
  * Return: any value
@@ -19,13 +19,13 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 
 	i = 0;
-	while (format[i] != '\0')
+	while (format && format[i] != '\0')
 		i++;
 
 	j = 0;
-	while (format[j] != '\0')
+	while (format && format[j] != '\0')
 	{
-		if (i == j - 1)
+		if (j == i - 1)
 			separator = "";
 
 		switch (format[j])
@@ -47,7 +47,7 @@ void print_all(const char * const format, ...)
 		}
 		j++;
 	}
-	va_end(ap);
 	printf("\n");
+	va_end(ap);
 
 }
