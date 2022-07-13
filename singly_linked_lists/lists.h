@@ -1,13 +1,22 @@
 #ifndef __LISTS__
 #define __LISTS__
 
-typedef struct list 
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+
+typedef struct list_s
 {
 	char *str;
-	unsigned len;
-	struct list *next;
+	unsigned int len;
+	struct list_s *next;
 
-}list_t;
+} list_t;
 
 /* Prototypes */
 
