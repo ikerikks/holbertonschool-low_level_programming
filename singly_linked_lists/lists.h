@@ -1,7 +1,13 @@
 #ifndef __LISTS__
 #define __LISTS__
 
-struct list_t;
+typedef struct list 
+{
+	char *str;
+	unsigned len;
+	struct list *next;
+
+}list_t;
 
 /* Prototypes */
 
