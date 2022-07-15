@@ -6,7 +6,7 @@
 /**
  * add_nodeint - adds a new node at the beginning of a linked list
  * @head: HEAD node of link list
- * @n:
+ * @n: integer
  *
  * Return: new node
  */
