@@ -7,7 +7,6 @@
  * add_nodeint_end - adds a new node at the end of a linked list
  * @head: HEAD node of link list
  * @n: integer
- *
  * Return: new node
  */
 
