@@ -25,9 +25,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	lastNode = *head;
 
 	if (lastNode == NULL)
-	{
 		*head = newNode;
-	}
 
 	else
 	{
