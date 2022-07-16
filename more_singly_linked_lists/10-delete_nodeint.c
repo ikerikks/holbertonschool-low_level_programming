@@ -2,16 +2,16 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - inserts a new node at a given position
+ * delete_nodeint_at_index - inserts a new node at a given position
  * @head: HEAD node of link list
  * @index: index counter
  *
  * Return: head
  */
 
- int delete_nodeint_at_index(listint_t **head, unsigned int index)
- {
-	size_t i;   
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
+{
+	size_t i;
 	listint_t *prev;
 	listint_t *next;
 
@@ -45,4 +45,4 @@
 
 	return (1);
 
- }
+}
