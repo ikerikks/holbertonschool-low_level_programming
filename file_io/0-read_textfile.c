@@ -14,12 +14,12 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 
-   	int file;
+	int file;
 	int rd;
 	int  wr;
 	char *ptr;
 
-   	file = open(filename, O_RDONLY);
+	file = open(filename, O_RDONLY);
 
 	if (file == (-1))
 		return (0);
