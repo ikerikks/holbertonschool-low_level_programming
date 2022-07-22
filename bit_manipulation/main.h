@@ -1,6 +1,8 @@
 #ifndef __BINARY__
 #define __BINARY__
 
+int _putchar(char c);
+
 /* Bit manipulation */
 
 unsigned int binary_to_uint(const char *b);
