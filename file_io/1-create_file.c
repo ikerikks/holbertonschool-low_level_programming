@@ -26,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		text_content = "";
 
-	file = open(filename, O_CREAT | O_TRUNC | O_WRONLY | O_APPEND, 600);
+	file = open(filename, O_CREAT | O_TRUNC | O_WRONLY | O_APPEND, 0600);
 
 	if (text_content != NULL)
 	{
