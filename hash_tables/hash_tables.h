@@ -1,3 +1,4 @@
+#include <stddef.h>
 #ifndef __HASH_TABLES__
 #define  __HASH_TABLES__
 
